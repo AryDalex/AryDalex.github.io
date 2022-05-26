@@ -1,141 +1,157 @@
 :root {
     /* colors */
-    --fundador-color: #fff;
-    --fundador-background: rgb(44, 44, 44);
-    --fundador-background-1: rgb(0, 119, 255);
+    --bloco-color: #000;
+    --bloco-background: rgb(255, 255, 255);
+    --fundador-background-1: rgb(0, 225, 255);
     --fundador-background-2: rgb(255, 0, 157);
     --fundador-background-3: rgb(153, 0, 255);
 }
 
-body, .text-empresa, .projetos-1, .projetos-2, .main-fundadores, .fundador, .cursos {
+body, #sobre, .empresa, .text-empresa, .projetos, #fundadores, .fundadores, .fundador, .cursos , #mvv, .mvv, .mvv-obj {
     display: flex;
     flex-direction: column;
 }
 
-.sobre {
-    padding: 8em;
-
-    display: flex;
-    flex-direction: column;
-    gap: 8em;
+section {
+    padding: 100px;
 }
 
+.empresa, .text-empresa, #fundadores, .fundadores, .fundador, #mvv, .mvv {
+    gap: 80px;
+}
+
+.img-empresa, .fundador {
+    border-radius: 30px;
+}
+
+/* sobre a empresa */
 .empresa {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 3em;
+    justify-content: space-around;
 }
 
 .img-empresa {
-    width: 35em;
+    width: 400px;
     height: auto;
-    border-radius: 2em;
 }
 
-.text-empresa, h2 {
-    font-size: 1.1em;
-
-    gap: 3em;
+.text-empresa {
+    font-size: 18px;
 }
 
-h2, h3, .text-empresa {
+h2, h3, h4,  .text-empresa,.text {
     text-align: center;
 }
 
-h2 {
-    font-size: 3em;
-}
-
-.projetos {
+.grupo-projetos {
     display: none;
 }
 
 /* fundadores */
-
-.main-fundadores {
-    padding: 5em;
-
+#fundadores, #mvv {
     align-items: center;
-    gap: 4em;
 }
 
-.fundadores {
-    color: var(--fundador-color);
+.fundadores, .mvv {
+    color: var(--bloco-color);
+    
+}
 
-    display: flex;
+.img-projeto, .img-fundador {
+    width: 150px;
+    height: auto;
+
+    border-radius: 100px;
+}
+
+.fundador, .mvv-obj {
+    background: var(--bloco-background);
+
+    padding: 30px;
+    width: 15em;
+
     flex-direction: column;
-    gap: 4em;
+    align-items: center;
+
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    box-shadow: 2px 2px 8px 5px #00000033;
+    transition: .5s;
+
+    gap: 30px;
 }
 
-.fundador {
-    background: var(--fundador-background);
-
-    padding: 4em;
-
+.fundador:hover, .mvv-obj:hover {
     border: 1px solid #000000;
-    border-radius: 2em;
-
-    align-items: center;
-    gap: 3em;
+    transform: scale(1.1);
 }
 
 .fundador-1:hover {
-    background: linear-gradient(var(--fundador-background), var(--fundador-background-1));
+    background: linear-gradient(var(--bloco-background), var(--fundador-background-1));
 }
 
 .fundador-2:hover {
-    background: linear-gradient(var(--fundador-background), var(--fundador-background-2));
+    background: linear-gradient(var(--bloco-background), var(--fundador-background-2));
 }
 
 .fundador-3:hover {
-    background: linear-gradient(var(--fundador-background), var(--fundador-background-3));
+    background: linear-gradient(var(--bloco-background), var(--fundador-background-3));
 }
 
-h3 {
-    font-size: 1.5em;
+/* mvv */
+.img-mvv {
+    width: 150px;
+    height: auto;
+
+    border-radius: 100px;
 }
 
-.cursos {
-    font-size: 0.9em;
-    gap: 0.5em;
+.valores-text {
+    padding-bottom: 5px;
 }
 
-.curso:before {
-    content: "";
+.valores-text:before {
+    content: "\2605  ";
 }
 
-@media screen and (min-width: 1024px) {
-    .sobre { 
-        display: flex;
-        flex-direction: row;
+/* tablet */
+@media screen and (min-width: 768px) {
+    .img-empresa {
+        width: 600px;
+        height: auto;
     }
 
     .text-empresa {
         text-align: left;
+
+        padding: 0 25px;
     }
 
-    .projetos {
-        padding-left: 4em;
+    .fundadores, .mvv {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 
+/* desktop */
+@media screen and (min-width: 1024px) {
+    .empresa {
+        width: 40%;
+    }
+
+    #sobre {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .grupo-projetos, .projetos {
         display: flex;
-        gap: 2em;
+        gap: 20px;
     }
 
-    .projetos-1, .projetos-2 {
-        gap: 2em;
-    }
-
-    .img-projeto, .img-fundador {
-        width: 9em;
-        height: auto;
-    
-        border-radius: 100px;
-    }
-
-    /* fundadores */
-    
-    .fundadores {
+    /* fundadores e mvv */
+    .fundadores, .mvv {
         flex-direction: row;
         justify-content: space-around;
     }
