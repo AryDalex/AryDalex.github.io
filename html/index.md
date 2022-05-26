@@ -14,7 +14,7 @@
             <h1 title="Prototype"><a href="#">Prototype</a></h1>
             <nav>
                 <ul class="links links-cabecalho">
-                    <li><a class="link-cabecalho" href="index.md">Home</a></li>
+                    <li><a class="link-cabecalho" href="index.html">Home</a></li>
                     <li><a class="link-cabecalho" href="produtos.html">Produtos</a></li>
                     <li><a class="link-cabecalho" href="sobre.html">Sobre</a></li>
                 </ul>
@@ -34,7 +34,7 @@
             <h2>destaque da semana</h2>
             <div class="destaque">
                 <div class="destaque-semana">
-                    <a class="destaque-link" href="isedetec.md">
+                    <a class="destaque-link" href="isedetec.html">
                         <img class="img-destaque" src="../img/isedetec.jpg" alt="Imagem do projeto IseDetec" title="IseDetec">
                         <h5>IseDetec</h5>
                     </a>
