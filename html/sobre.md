@@ -15,8 +15,8 @@
             <nav>
                 <ul class="links links-cabecalho">
                     <li><a class="link-cabecalho" href="index.md">Home</a></li>
-                    <li><a class="link-cabecalho" href="produtos.md">Produtos</a></li>
-                    <li><a class="link-cabecalho" href="sobre.md">Sobre</a></li>
+                    <li><a class="link-cabecalho" href="produtos.html">Produtos</a></li>
+                    <li><a class="link-cabecalho" href="sobre.html">Sobre</a></li>
                 </ul>
             </nav>
         </header>
