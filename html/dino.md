@@ -1,5 +1,5 @@
-<!DOCTYPE htm1>
-<htm1 lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-br">
     <head>
         <meta charset="utf-8">
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -14,9 +14,9 @@
             <h1 title="Prototype"><a href="#">Prototype</a></h1>
             <nav>
                 <ul class="links links-cabecalho">
-                    <li><a class="link-cabecalho" href="index.html">Home</a></li>
-                    <li><a class="link-cabecalho" href="produtos.html">Produtos</a></li>
-                    <li><a class="link-cabecalho" href="sobre.html">Sobre</a></li>
+                    <li><a class="link-cabecalho" href="index.md">Home</a></li>
+                    <li><a class="link-cabecalho" href="produtos.md">Produtos</a></li>
+                    <li><a class="link-cabecalho" href="sobre.md">Sobre</a></li>
                 </ul>
             </nav>
         </header>
@@ -86,4 +86,4 @@
             <p class="rodape-copy">Prototype &copy; 2019</p>
         </footer>
     </body>
-</htm1>
+</html>
